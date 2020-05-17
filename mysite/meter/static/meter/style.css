@@ -1,0 +1,7 @@
+li a {
+    color: green;
+}
+body {
+    position: center;
+    background: white url("images/pole.jpg") no-repeat;
+}
