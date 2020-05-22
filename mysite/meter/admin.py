@@ -37,9 +37,9 @@ class UnitValueAdmin(admin.ModelAdmin):
 
 class NewsAdmin(admin.ModelAdmin):
 	list_display = ('id', 'title', 'created_at', 'updated_at', 'content')
-	list_display_links = ('id', 'title')
+	list_display_links = ('id',)
 	search_fields = ('title', 'content')
-	list_editable = ('content',)
+	list_editable = ('content', 'title')
 
 
 admin.site.register(UsersSNT, AdminUsersSNT)

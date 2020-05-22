@@ -1,7 +1,59 @@
-li a {
-    color: green;
+
+body{
+    font: 13pt Arial, Helvetica, sans-serif; /* Шрифт теста */
+    margin: 0;
 }
-body {
-    position: center;
-    background: white url("images/pole.jpg") no-repeat;
+.header{
+    font-size: 30px; /* Размер текста в шапке */
+    text-align: left; /* Выравнивание текст шапки по центру */
+    width: 100%;
+    height: auto;
+    padding: 30px; /* Отступы внутри блока шапки */
+    background: url("images/pole.jpg") no-repeat center bottom; /* Цвет фона шапки */
+    color: #fff; /* Цвет текста */
+    /*background-image: url(images/pole.jpg) no-repeat center bottom;*/
+    background-size: 100%;
+
+}
+.button{
+    display: inline-block;
+    position: absolute;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    left: 90%;
+    font-size: 20px;
+    text-align: center;
+    background: #4CAF50;
+}
+.sidebar{
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 10px; /* Отступы внутри левого блока */
+
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+}
+.main{
+    color: black;
+    /*background-color: #eee;*/
+    width: auto;
+    height: auto;
+    padding: 15px; /* Отступы внутри правого блока */
+    background-size: contain;
+    background: url(images/pole.jpg) repeat center bottom; /* Цвет фона правого блока */
+    text-align: center;
+    font-size: 20px;
+    background-size: 100%;
+}
+.footer{
+    background: url(images/pole.jpg) no-repeat center bottom; /* Цвет фона нижнего блока-подвала */
+    color: #fff; /* Цвет текста подвала */
+    padding: 5px; /* Отступы внутри блока */
+    width: auto;
+    height: auto;
+    background-size: 100%;
 }

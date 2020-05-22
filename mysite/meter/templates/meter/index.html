@@ -2,13 +2,36 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'meter/style.css' %}">
 
-{% if listing %}
-<ul>
-    {% for question in listing %}
-    <li><a href="/meter/{{ question.title }}/">{{ question.title }}</a></li>
-    <p>{{question.content}}</p>
-    {% endfor %}
-</ul>
-{% else %}
-<p>No news are available.</p>
-{% endif %}
+
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+
+</head>
+<body>
+<div class="header">
+    <a href="#" class="button">Вход</a>
+    СНТ "Солнечная поляна - 1"</div>
+
+<div class="sidebar">Добро пожаловать!</div>
+
+<div class="main">
+    {% if listing %}
+
+        {% for question in listing %}
+        <li><a href="/meter/{{ question.title }}/">{{ question.title }}</a></li>
+        <p>{{question.content}}</p>
+        {% endfor %}
+
+    {% else %}
+    <p>No news are available.</p>
+    {% endif %}
+
+</div>
+<div class="footer">Тел.: 234-876
+</div>
+</body>
+</html>

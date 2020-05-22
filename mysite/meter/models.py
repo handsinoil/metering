@@ -65,6 +65,6 @@ class News(models.Model):
 		return self.title
 
 	class Meta:
-		verbose_name = 'Новость'
-		verbose_name_plural = 'Новости'
+		verbose_name = 'Оплата'
+		verbose_name_plural = 'Оплата'
 		ordering = ['-created_at']
